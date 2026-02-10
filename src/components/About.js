@@ -114,11 +114,22 @@ const About = () => {
           transition={{ duration: 0.3 }}
         >
           <h2 className="section-title">About Me</h2>
-          <p className="about-description">
-            I'm a passionate Full Stack Developer with expertise in building modern web applications.
-            With a strong foundation in both frontend and backend technologies, I create seamless,
-            user-centric solutions that drive business growth.
-          </p>
+          <div className="about-description">
+            <p>
+              Full Stack Developer with 5+ years of experience building scalable web applications 
+              and backend systems. Specialized in Java (Spring Boot), Node.js, React.js, and cloud technologies.
+            </p>
+            <p>
+              I focus on developing robust RESTful APIs, microservices, and real-time systems. My experience 
+              spans e-commerce automation, trading algorithms, and learning platforms. I'm passionate about 
+              clean code, system architecture, and delivering solutions that solve real business problems.
+            </p>
+            <p>
+              Currently working at Solveda Software as a Senior Software Developer, building automation 
+              systems. Previously developed trading infrastructure at Toolbox OS and enterprise solutions 
+              at Wipro Limited.
+            </p>
+          </div>
         </motion.div>
 
         <div className="skills-section">

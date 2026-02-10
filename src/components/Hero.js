@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import '../styles/Hero.css';
 
 const Hero = () => {
@@ -21,7 +22,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="hero-subtitle"
         >
-          Full Stack Developer
+          Senior Full Stack Developer
         </motion.h2>
         
         <motion.p
@@ -30,8 +31,43 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="hero-description"
         >
-          Innovative Full Stack Engineer with 4+ years of expertise in MERN stack development and enterprise solutions. Specialized in crafting high-performance web applications with Node.js, React, and Java, delivering scalable solutions that drive technological advancement.
+          Building scalable systems that solve real problems. Specialized in microservices architecture, 
+          real-time trading systems, and secure payment integrations. 5+ years turning complex requirements 
+          into production-ready solutions with Java, Node.js, and React.
         </motion.p>
+
+        <motion.div
+          className="hero-links"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <a 
+            href="https://github.com/iabhinavkakran" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-link"
+            aria-label="GitHub Profile"
+          >
+            <FaGithub /> GitHub
+          </a>
+          <a 
+            href="https://linkedin.com/in/iabhinavkakran" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-link"
+            aria-label="LinkedIn Profile"
+          >
+            <FaLinkedin /> LinkedIn
+          </a>
+          <a 
+            href="mailto:iabhinavkakran@gmail.com"
+            className="social-link"
+            aria-label="Email"
+          >
+            <FaEnvelope /> Email
+          </a>
+        </motion.div>
         
         <motion.div
           className="hero-cta"
@@ -39,8 +75,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <a href="#contact" className="cta-button primary">Get in Touch</a>
-          <a href="#projects" className="cta-button secondary">View Projects</a>
+          <a href="#projects" className="cta-button primary">See My Work</a>
+          <a href="#contact" className="cta-button secondary">Get in Touch</a>
         </motion.div>
       </div>
     </section>
