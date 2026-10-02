@@ -87,7 +87,7 @@ const Contact = () => {
           animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <p>Open to opportunities and collaborations</p>
+          <p>Open to full stack and backend engineering roles</p>
           <motion.a
             href="mailto:iabhinavkakran@gmail.com"
             className="cta-button primary"

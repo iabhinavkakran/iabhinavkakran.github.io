@@ -154,7 +154,7 @@ class TradingWebhookHandler {
         });
     }
 }`,
-    explanation: "Reduces latency by 70% using Redis caching, idempotency patterns, and async processing for 50K+ daily webhook calls."
+    explanation: "Cuts system latency by 30% using Redis caching, idempotency patterns, and async processing for high-volume TradingView webhook traffic."
   },
   {
     id: 'security',

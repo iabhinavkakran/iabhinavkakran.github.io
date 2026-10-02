@@ -1,13 +1,15 @@
 import React, { memo } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { 
-  FaReact, FaNodeJs, FaJava, FaGitAlt, FaDocker, FaAws, FaVuejs
+import {
+  FaReact, FaNodeJs, FaJava, FaGitAlt, FaDocker, FaAws,
+  FaHtml5, FaCss3Alt, FaGithub, FaSitemap
 } from 'react-icons/fa';
-import { 
-  SiJavascript, SiSpringboot, SiExpress, SiMongodb, 
-  SiMysql, SiRedis, SiFirebase, SiPostman, SiRedux,
-  SiKubernetes, SiC
+import {
+  SiJavascript, SiTypescript, SiSqlalchemy, SiExpress,
+  SiOpenapiinitiative, SiSocketdotio, SiMongodb, SiPostgresql, SiRedis,
+  SiFirebase, SiPostman, SiRedux, SiKubernetes, SiC, SiJest, SiGithubactions,
+  SiSpringboot, SiSpringsecurity, SiShieldsdotio, SiBlockchaindotcom, SiHibernate
 } from 'react-icons/si';
 import '../styles/About.css';
 
@@ -15,44 +17,73 @@ const techCategories = [
   {
     title: "Languages",
     items: [
-      { name: 'JavaScript', icon: SiJavascript, color: '#f7df1e' },
+      { name: 'JavaScript (ES6+)', icon: SiJavascript, color: '#f7df1e' },
+      { name: 'TypeScript', icon: SiTypescript, color: '#3178c6' },
       { name: 'Java', icon: FaJava, color: '#007396' },
+      { name: 'SQL', icon: SiSqlalchemy, color: '#e38c00' },
       { name: 'C', icon: SiC, color: '#A8B9CC' }
     ]
   },
   {
-    title: "Frameworks",
+    title: "Frontend",
     items: [
-      { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
       { name: 'React.js', icon: FaReact, color: '#61dafb' },
-      { name: 'Express.js', icon: SiExpress, color: '#000000' },
-      { name: 'Spring Boot', icon: SiSpringboot, color: '#6DB33F' },
-      { name: 'Vue.js', icon: FaVuejs, color: '#4FC08D' }
+      { name: 'Redux', icon: SiRedux, color: '#764ABC' },
+      { name: 'HTML5', icon: FaHtml5, color: '#e34c26' },
+      { name: 'CSS3', icon: FaCss3Alt, color: '#1572b6' }
     ]
   },
   {
-    title: "Cloud & DevOps",
+    title: "Backend",
     items: [
-      { name: 'Firebase', icon: SiFirebase, color: '#FFCA28' },
-      { name: 'AWS', icon: FaAws, color: '#FF9900' },
-      { name: 'Docker', icon: FaDocker, color: '#2496ED' },
-      { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5' }
+      { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
+      { name: 'Express.js', icon: SiExpress, color: '#000000' },
+      { name: 'REST APIs', icon: SiOpenapiinitiative, color: '#6BA539' },
+      { name: 'WebSockets', icon: SiSocketdotio, color: '#1f2d3d' }
     ]
   },
   {
     title: "Databases",
     items: [
       { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-      { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
-      { name: 'Redis', icon: SiRedis, color: '#DC382D' }
+      { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+      { name: 'Redis', icon: SiRedis, color: '#DC382D' },
+      { name: 'Firebase', icon: SiFirebase, color: '#FFCA28' }
     ]
   },
   {
-    title: "Tools & Others",
+    title: "Cloud & DevOps",
+    items: [
+      { name: 'AWS', icon: FaAws, color: '#FF9900' },
+      { name: 'Docker', icon: FaDocker, color: '#2496ED' },
+      { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5' },
+      { name: 'CI/CD', icon: SiGithubactions, color: '#2088ff' }
+    ]
+  },
+  {
+    title: "Security",
+    items: [
+      { name: 'JWT', icon: SiShieldsdotio, color: '#f97316' },
+      { name: 'OAuth2', icon: SiSpringsecurity, color: '#6DB33F' },
+      { name: 'Crypto Hashing', icon: SiBlockchaindotcom, color: '#10b981' }
+    ]
+  },
+  {
+    title: "Java Ecosystem",
+    items: [
+      { name: 'Spring Boot', icon: SiSpringboot, color: '#6DB33F' },
+      { name: 'Spring Security', icon: SiSpringsecurity, color: '#db4437' },
+      { name: 'Hibernate', icon: SiHibernate, color: '#59666c' }
+    ]
+  },
+  {
+    title: "Tools & Practices",
     items: [
       { name: 'Git', icon: FaGitAlt, color: '#F05032' },
+      { name: 'GitHub', icon: FaGithub, color: '#181717' },
+      { name: 'Jest', icon: SiJest, color: '#c21230' },
       { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
-      { name: 'Redux', icon: SiRedux, color: '#764ABC' }
+      { name: 'Agile/Scrum', icon: FaSitemap, color: '#8bc34a' }
     ]
   }
 ];
@@ -116,18 +147,19 @@ const About = () => {
           <h2 className="section-title">About Me</h2>
           <div className="about-description">
             <p>
-              Full Stack Developer with 5+ years of experience building scalable web applications 
-              and backend systems. Specialized in Java (Spring Boot), Node.js, React.js, and cloud technologies.
+              Full Stack Developer with 5+ years of experience building scalable web applications with 
+              Node.js, Express.js, and React.js, supported by Java Spring Boot for backend services.
             </p>
             <p>
-              I focus on developing robust RESTful APIs, microservices, and real-time systems. My experience 
-              spans e-commerce automation, trading algorithms, and learning platforms. I'm passionate about 
-              clean code, system architecture, and delivering solutions that solve real business problems.
+              I specialize in RESTful APIs, microservices, and real-time systems such as webhooks and 
+              chat. My work spans e-commerce refund automation, real-time trading algorithms, and MERN 
+              learning platforms. I'm passionate about clean code, system design, and shipping solutions 
+              that solve real business problems.
             </p>
             <p>
-              Currently working at Solveda Software as a Senior Software Developer, building automation 
-              systems. Previously developed trading infrastructure at Toolbox OS and enterprise solutions 
-              at Wipro Limited.
+              Most recently at Saksoft Limited, where I led Node.js and React.js development for DMart 
+              eCommerce (Avenue Supermarts). Before that, I built real-time trading infrastructure at 
+              Toolbox OS and enterprise backend services at Wipro Limited.
             </p>
           </div>
         </motion.div>

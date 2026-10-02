@@ -155,6 +155,17 @@
   font-weight: 600;
 }
 
+.client-info {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: -10px 0 16px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+}
+
 .meta-info {
   display: flex;
   gap: 20px;

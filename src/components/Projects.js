@@ -8,117 +8,117 @@ const projects = [
   {
     title: "USPA Refund Automation System",
     type: "Production System",
-    description: "Enterprise-grade refund automation system processing 10,000+ daily transactions across multiple e-commerce platforms with zero-downtime architecture.",
+    description: "Refund and return automation system for DMart eCommerce, integrating 3 commerce platforms with Node.js services and React.js dashboards.",
     githubLink: "https://github.com/iabhinavkakran",
     liveLink: null,
     role: "Lead Developer",
-    technologies: ["Java", "Spring Boot", "Shopify API", "Razorpay", "Microservices", "JWT", "Redis", "Docker"],
+    technologies: ["Node.js", "Express.js", "React.js", "REST APIs", "Shopify", "Omuni", "Marmeto", "Razorpay", "JWT"],
     impact: {
       metrics: [
-        { value: "100%", label: "Automated Processing", icon: FaRocket, trend: "success" },
-        { value: "99.9%", label: "System Uptime", icon: FaChartLine, trend: "success" },
-        { value: "10K+", label: "Daily Transactions", icon: FaUsers, trend: "growing" }
+        { value: "3", label: "Platforms Integrated", icon: FaRocket, trend: "success" },
+        { value: "Auto", label: "Refund Processing", icon: FaChartLine, trend: "success" },
+        { value: "3", label: "Commerce APIs", icon: FaUsers, trend: "growing" }
       ],
       problem: "Manual refund processing causing delays and errors across multiple e-commerce platforms"
     },
     highlights: [
       {
         title: "Multi-Platform Integration",
-        description: "Seamlessly integrated with Shopify, Omuni, and Marmeto Code APIs, handling complex webhook flows and maintaining data consistency across platforms.",
-        technical: "Implemented idempotency keys and distributed transaction patterns"
+        description: "Integrated Shopify, Omuni, and Marmeto with Node.js backend services and React.js dashboards.",
+        technical: "RESTful APIs with idempotent request handling and consistent data modelling"
       },
       {
         title: "Automated Payment Processing",
-        description: "Built intelligent refund engine with Razorpay integration that automatically processes payments on successful returns/cancellations.",
-        technical: "Circuit breaker pattern for API failures, retry mechanisms with exponential backoff"
+        description: "Integrated Razorpay for automated refund processing on successful returns and cancellations.",
+        technical: "Payment gateway integration with retry handling for transient failures"
       },
       {
         title: "Security Architecture",
-        description: "Implemented multi-layer security with JWT authentication, crypto hashing, and secure token decoding for API protection.",
-        technical: "AES-256 encryption, token rotation, rate limiting, and request signing"
+        description: "Secured transactions with JWT authentication and cryptographic hashing for API protection.",
+        technical: "JWT issuance and verification, hashed credentials, secure token handling"
       },
       {
-        title: "Microservices Design",
-        description: "Architected fault-tolerant microservices handling order processing, payment integration, and notification services independently.",
-        technical: "Event-driven architecture with message queues, service discovery, and load balancing"
+        title: "RESTful Service Design",
+        description: "Built scalable Node.js and Express.js RESTful APIs and backend services for the Digital API team.",
+        technical: "Layered Express routes, validation middleware, structured error handling"
       }
     ]
   },
   {
     title: "Real-Time Crypto Trading Algorithm",
     type: "Trading System",
-    description: "High-performance algorithmic trading system connected to TradingView, executing real-time cryptocurrency trades with 30% reduced latency.",
+    description: "Real-time cryptocurrency trading algorithm connected to TradingView via secure webhooks, cutting system latency by 30%.",
     githubLink: "https://github.com/iabhinavkakran",
     liveLink: null,
     role: "Full Stack Developer",
-    technologies: ["Java", "Spring Boot", "Node.js", "Express.js", "TradingView API", "WebSocket", "Redis", "PostgreSQL"],
+    technologies: ["Node.js", "Express.js", "React.js", "Java", "Spring Boot", "TradingView", "Webhooks"],
     impact: {
       metrics: [
         { value: "+40%", label: "Decision Accuracy", icon: FaArrowUp, trend: "success" },
         { value: "-30%", label: "Latency Reduction", icon: FaClock, trend: "success" },
-        { value: "50K+", label: "Webhooks/Day", icon: FaRocket, trend: "growing" }
+        { value: "+50%", label: "Throughput", icon: FaRocket, trend: "growing" }
       ],
       problem: "Manual trading decisions causing missed opportunities and delayed executions in volatile crypto markets"
     },
     highlights: [
       {
         title: "Real-Time Data Processing",
-        description: "Built high-throughput backend processing 50,000+ TradingView webhook calls per day with sub-100ms latency.",
-        technical: "Redis caching layer, connection pooling, async processing with Node.js event loop"
+        description: "Architected a high-volume Express.js and Java Spring Boot backend for real-time TradingView data, boosting throughput and processing speed by 50%.",
+        technical: "Efficient request handling, connection reuse, and async processing with the Node.js event loop"
       },
       {
         title: "Strategic Decision Engine",
-        description: "Developed sophisticated algorithm for multi-position strategies (long/short/neutral) with dynamic risk management.",
-        technical: "Implemented decision trees, momentum indicators, and risk-reward calculation algorithms"
+        description: "Built the trading algorithm with decision-making accuracy improved by 40%, and optimized logic across 5 position types (buy, sell, short, long, neutral) for 35% higher trading efficiency.",
+        technical: "Rule-based signal evaluation across position types with risk-reward calculation"
       },
       {
         title: "Webhook Integration",
-        description: "Secure TradingView webhook integration with request validation, signature verification, and automatic failover.",
-        technical: "HMAC signature verification, duplicate request detection, distributed locks for order execution"
+        description: "Integrated TradingView through secure webhooks with request validation and signature verification.",
+        technical: "HMAC signature verification and duplicate request detection for order execution"
       },
       {
-        title: "24/7 Reliability",
-        description: "Fault-tolerant architecture with automatic failover, health monitoring, and instant alerts for system issues.",
-        technical: "Kubernetes deployment, health checks, Prometheus monitoring, PagerDuty integration"
+        title: "Live Trading Dashboard",
+        description: "Designed a React.js dashboard that visualizes live trading positions in real time.",
+        technical: "Component-based React UI with continuous updates from the backend"
       }
     ]
   },
   {
     title: "STG Learning Platform",
     type: "SaaS Platform",
-    description: "Full-featured MERN stack learning platform enabling coaches to create and deliver courses with integrated CMS, real-time chat, and automated email campaigns.",
+    description: "Production MERN stack learning platform where coaches create, manage, and deliver courses and video content.",
     githubLink: "https://github.com/iabhinavkakran",
     liveLink: "https://app.shortenthegap.com/login",
     role: "Full Stack Developer",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "WebSocket", "Redux", "JWT"],
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "Real-Time Chat", "CMS"],
     impact: {
       metrics: [
-        { value: "500+", label: "Active Users", icon: FaUsers, trend: "growing" },
-        { value: "95%", label: "Completion Rate", icon: FaChartLine, trend: "success" },
-        { value: "50+", label: "Published Courses", icon: FaRocket, trend: "growing" }
+        { value: "MERN", label: "Full Stack", icon: FaUsers, trend: "growing" },
+        { value: "Live", label: "Production Site", icon: FaChartLine, trend: "success" },
+        { value: "Auto", label: "Email Campaigns", icon: FaRocket, trend: "growing" }
       ],
-      problem: "Coaches lacking integrated platform for course delivery, student management, and engagement tracking"
+      problem: "Coaches lacking an integrated platform for course delivery, student management, and engagement tracking"
     },
     highlights: [
       {
-        title: "Custom CMS",
-        description: "Built comprehensive content management system for course creation, video uploads, and student enrollment with role-based access control.",
-        technical: "AWS S3 for media storage, CloudFront CDN, progressive video streaming"
+        title: "Course Delivery Platform",
+        description: "Launched the production learning platform where coaches create, manage, and deliver courses and video content.",
+        technical: "MERN stack with MongoDB for content storage and Express.js RESTful APIs"
       },
       {
-        title: "Real-Time Communication",
-        description: "Implemented Firebase-powered real-time chat with typing indicators, read receipts, and message history.",
-        technical: "WebSocket connections, offline message queuing, optimistic UI updates"
+        title: "Custom CMS",
+        description: "Implemented a content management system for course creation, video uploads, and student enrollment with role-based access control.",
+        technical: "Role-based permissions with authenticated admin workflows"
+      },
+      {
+        title: "Real-Time Chat",
+        description: "Added real-time chat between coaches and students using Socket.IO-based WebSocket connections.",
+        technical: "WebSocket connections for real-time messaging with message history"
       },
       {
         title: "Email Automation",
-        description: "Developed drip campaign system with Node.js for scheduled, targeted email delivery based on student progress and milestones.",
-        technical: "Node-cron for scheduling, SendGrid API integration, template engine with Handlebars"
-      },
-      {
-        title: "Performance Optimization",
-        description: "Optimized React application with code splitting, lazy loading, and memoization achieving 90+ Lighthouse score.",
-        technical: "React.lazy, useMemo/useCallback hooks, virtual scrolling for large lists"
+        description: "Automated drip campaigns with Node.js and MongoDB, boosting engagement and course completion.",
+        technical: "Scheduled job processing with scheduled campaign triggers based on MongoDB records"
       }
     ]
   }

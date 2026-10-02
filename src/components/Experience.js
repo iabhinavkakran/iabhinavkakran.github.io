@@ -6,17 +6,17 @@ import '../styles/Experience.css';
 
 const experiences = [
   {
-    title: "Senior Software Developer",
-    company: "Solveda Software India Pvt Ltd",
+    title: "Senior Software Developer (Full Stack)",
+    company: "Saksoft Limited",
+    client: "DMart eCommerce (Avenue Supermarts)",
     location: "Remote",
-    period: "09/2025 - Present",
+    period: "09/2025 - 04/2026",
     description: [
-      "Architected and deployed USPA refund automation system integrating Shopify, Omuni, and Marmeto with 100% automated payment processing via Razorpay",
-      "Implemented enterprise-grade security layer using JWT authentication, crypto hashing, and secure token decoding for multi-platform API integrations",
-      "Designed microservices architecture handling 10,000+ daily transactions with zero downtime during peak loads",
-      "Built fault-tolerant webhook systems ensuring 99.9% reliability for real-time order processing and refund automation"
+      "Developed scalable Node.js and Express.js RESTful APIs and backend services for the Digital API team",
+      "Led development of the USPA refund and return automation system, integrating 3 commerce platforms (Shopify, Omuni, Marmeto) with Node.js services and React.js dashboards",
+      "Integrated Razorpay payment gateway for automated refund processing, securing transactions with JWT authentication and cryptographic hashing"
     ],
-    technologies: ["Java", "Spring Boot", "Node.js", "Shopify API", "Razorpay", "JWT", "Microservices"]
+    technologies: ["Node.js", "Express.js", "React.js", "REST APIs", "Shopify", "Omuni", "Marmeto", "Razorpay", "JWT"]
   },
   {
     title: "Full Stack Developer",
@@ -24,12 +24,12 @@ const experiences = [
     location: "Remote",
     period: "04/2023 - 08/2025",
     description: [
-      "Engineered real-time cryptocurrency trading algorithm with TradingView webhook integration, improving decision accuracy by 40% and reducing latency by 30%",
-      "Optimized trading logic for multi-position strategies (long/short/neutral), increasing overall efficiency by 35%",
-      "Built high-throughput backend using Java Spring Boot and Node.js Express handling 50,000+ webhook calls/day with 50% faster data processing",
-      "Developed fault-tolerant system architecture with automatic failover and circuit breaker patterns for 24/7 trading operations"
+      "Engineered a real-time cryptocurrency trading algorithm integrated with TradingView via secure webhooks, improving decision-making accuracy by 40% and cutting system latency by 30%",
+      "Optimized trading logic across 5 position types (buy, sell, short, long, neutral), increasing trading efficiency by 35% and execution precision in volatile markets",
+      "Architected an Express.js (Node.js) and Java Spring Boot backend for high-volume, real-time TradingView data, boosting throughput and processing speed by 50%",
+      "Designed a React.js trading dashboard that visualizes live trading positions in real time"
     ],
-    technologies: ["Java", "Spring Boot", "Node.js", "Express.js", "TradingView API", "WebSocket", "Redis"]
+    technologies: ["Node.js", "Express.js", "React.js", "Java", "Spring Boot", "TradingView", "Webhooks", "Real-Time Processing"]
   },
   {
     title: "Project Engineer",
@@ -37,12 +37,10 @@ const experiences = [
     location: "Remote",
     period: "03/2021 - 03/2023",
     description: [
-      "Designed and deployed RESTful APIs and microservices using Java Spring Boot and Node.js, serving 100,000+ daily requests",
-      "Implemented secure authentication and authorization using JWT/OAuth2, reducing security vulnerabilities by 80%",
-      "Collaborated with React.js teams to optimize API integration, improving frontend response times by 45%",
-      "Led Agile sprints and conducted code reviews, maintaining 95% test coverage and reducing bug leakage by 60%"
+      "Built scalable RESTful APIs and microservices with Node.js, Express.js, and Java Spring Boot, enabling reliable data exchange across backend services",
+      "Secured 3 core modules (transactions, authentication, authorization) with JWT/OAuth2 for React.js clients"
     ],
-    technologies: ["Java", "Spring Boot", "Node.js", "Express.js", "React.js", "JWT", "OAuth2", "Microservices"]
+    technologies: ["Node.js", "Express.js", "Java", "Spring Boot", "Microservices", "REST APIs", "JWT", "OAuth2"]
   }
 ];
 
@@ -62,6 +60,9 @@ const ExperienceCard = memo(({ experience, index, inView }) => (
       >
         <h3>{experience.title}</h3>
         <h4>{experience.company}</h4>
+        {experience.client && (
+          <span className="client-info">Client: {experience.client}</span>
+        )}
       </motion.div>
       <motion.div 
         className="meta-info"

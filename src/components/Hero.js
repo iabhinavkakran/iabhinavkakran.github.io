@@ -31,9 +31,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="hero-description"
         >
-          Building scalable systems that solve real problems. Specialized in microservices architecture, 
-          real-time trading systems, and secure payment integrations. 5+ years turning complex requirements 
-          into production-ready solutions with Java, Node.js, and React.
+          Building scalable systems that solve real problems. Specialized in RESTful APIs, microservices, 
+          real-time systems, and secure payment integrations. 5+ years turning complex requirements 
+          into production-ready solutions with Node.js, Express.js, React.js, and Java Spring Boot.
         </motion.p>
 
         <motion.div
