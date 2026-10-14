@@ -9,7 +9,8 @@ import {
   SiJavascript, SiTypescript, SiSqlalchemy, SiExpress,
   SiOpenapiinitiative, SiSocketdotio, SiMongodb, SiPostgresql, SiRedis,
   SiFirebase, SiPostman, SiRedux, SiKubernetes, SiC, SiJest, SiGithubactions,
-  SiSpringboot, SiSpringsecurity, SiShieldsdotio, SiBlockchaindotcom, SiHibernate
+  SiSpringboot, SiSpringsecurity, SiShieldsdotio, SiBlockchaindotcom, SiHibernate,
+  SiGooglecloud
 } from 'react-icons/si';
 import '../styles/About.css';
 
@@ -55,6 +56,7 @@ const techCategories = [
     title: "Cloud & DevOps",
     items: [
       { name: 'AWS', icon: FaAws, color: '#FF9900' },
+      { name: 'GCP', icon: SiGooglecloud, color: '#4285F4' },
       { name: 'Docker', icon: FaDocker, color: '#2496ED' },
       { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5' },
       { name: 'CI/CD', icon: SiGithubactions, color: '#2088ff' }
@@ -147,19 +149,21 @@ const About = () => {
           <h2 className="section-title">About Me</h2>
           <div className="about-description">
             <p>
-              Full Stack Developer with 5+ years of experience building scalable web applications with 
-              Node.js, Express.js, and React.js, supported by Java Spring Boot for backend services.
+              Full Stack Developer with 5+ years of experience building scalable applications across 
+              eCommerce, FinTech, and EdTech. Proficient in Java, Spring Boot, Microservices, REST APIs, 
+              React.js, and Node.js.
             </p>
             <p>
-              I specialize in RESTful APIs, microservices, and real-time systems such as webhooks and 
-              chat. My work spans e-commerce refund automation, real-time trading algorithms, and MERN 
-              learning platforms. I'm passionate about clean code, system design, and shipping solutions 
-              that solve real business problems.
+              I specialize in secure authentication, RESTful APIs, microservices, and real-time systems 
+              such as webhooks and chat. My work spans e-commerce refund automation, real-time trading 
+              platforms, and MERN learning platforms. I'm passionate about clean code, system design, and 
+              shipping solutions that solve real business problems.
             </p>
             <p>
-              Most recently at Saksoft Limited, where I led Node.js and React.js development for DMart 
-              eCommerce (Avenue Supermarts). Before that, I built real-time trading infrastructure at 
-              Toolbox OS and enterprise backend services at Wipro Limited.
+              Most recently I worked as an IT Analyst at Tata Consultancy Services. Before that I led 
+              full stack development at Saksoft Limited for DMart eCommerce (Avenue Supermarts), built 
+              real-time trading infrastructure at Toolbox OS, and delivered enterprise backend services 
+              at Wipro Limited.
             </p>
           </div>
         </motion.div>

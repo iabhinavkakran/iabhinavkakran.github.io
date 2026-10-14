@@ -6,17 +6,27 @@ import '../styles/Experience.css';
 
 const experiences = [
   {
+    title: "IT Analyst",
+    company: "Tata Consultancy Services (TCS)",
+    location: "India",
+    period: "09/2026 - 09/2026",
+    description: [
+      "Joined as an IT Analyst; resigned due to an unforeseen family emergency"
+    ],
+    technologies: ["Java", "Spring Boot", "REST APIs"]
+  },
+  {
     title: "Senior Software Developer (Full Stack)",
     company: "Saksoft Limited",
     client: "DMart eCommerce (Avenue Supermarts)",
     location: "Remote",
     period: "09/2025 - 04/2026",
     description: [
-      "Developed scalable Node.js and Express.js RESTful APIs and backend services for the Digital API team",
-      "Led development of the USPA refund and return automation system, integrating 3 commerce platforms (Shopify, Omuni, Marmeto) with Node.js services and React.js dashboards",
-      "Integrated Razorpay payment gateway for automated refund processing, securing transactions with JWT authentication and cryptographic hashing"
+      "Delivered end-to-end eCommerce features for the Digital API team using Node.js, Express.js, Spring Boot, and React.js",
+      "Led development of the USPA refund and return automation system, integrating 3 commerce platforms (Shopify, Omuni, Marmeto) with Node.js and Spring Boot services and React.js dashboards",
+      "Automated refund payouts via Razorpay payment gateway integration and secured REST APIs with JWT authentication and cryptographic hashing"
     ],
-    technologies: ["Node.js", "Express.js", "React.js", "REST APIs", "Shopify", "Omuni", "Marmeto", "Razorpay", "JWT"]
+    technologies: ["Node.js", "Express.js", "Java", "Spring Boot", "React.js", "REST APIs", "Microservices", "Shopify", "Omuni", "Marmeto", "Razorpay", "JWT"]
   },
   {
     title: "Full Stack Developer",
@@ -24,23 +34,22 @@ const experiences = [
     location: "Remote",
     period: "04/2023 - 08/2025",
     description: [
-      "Engineered a real-time cryptocurrency trading algorithm integrated with TradingView via secure webhooks, improving decision-making accuracy by 40% and cutting system latency by 30%",
-      "Optimized trading logic across 5 position types (buy, sell, short, long, neutral), increasing trading efficiency by 35% and execution precision in volatile markets",
-      "Architected an Express.js (Node.js) and Java Spring Boot backend for high-volume, real-time TradingView data, boosting throughput and processing speed by 50%",
-      "Designed a React.js trading dashboard that visualizes live trading positions in real time"
+      "Engineered a real-time cryptocurrency trading platform with Java Spring Boot and Node.js backend services integrated with TradingView via secure webhooks, improving decision-making accuracy by 40% and cutting system latency by 30%",
+      "Designed real-time React.js components visualizing 5 position types (buy, sell, short, long, neutral) via Spring Boot REST APIs, increasing trading efficiency by 35% and execution precision in volatile markets",
+      "Architected a high-volume, real-time TradingView data pipeline, boosting throughput and processing speed by 50%"
     ],
-    technologies: ["Node.js", "Express.js", "React.js", "Java", "Spring Boot", "TradingView", "Webhooks", "Real-Time Processing"]
+    technologies: ["Java", "Spring Boot", "Node.js", "Express.js", "React.js", "REST APIs", "TradingView", "Webhooks", "Real-Time Processing"]
   },
   {
-    title: "Project Engineer",
+    title: "Project Engineer (Java Full Stack)",
     company: "Wipro Limited",
     location: "Remote",
     period: "03/2021 - 03/2023",
     description: [
-      "Built scalable RESTful APIs and microservices with Node.js, Express.js, and Java Spring Boot, enabling reliable data exchange across backend services",
-      "Secured 3 core modules (transactions, authentication, authorization) with JWT/OAuth2 for React.js clients"
+      "Developed Java Spring Boot RESTful APIs and microservices with Node.js, Express.js, and React.js front ends for client applications, enabling reliable data exchange",
+      "Secured 3 core backend modules (transactions, authentication, authorization) with JWT/OAuth2 in Spring Boot and built corresponding React.js UI flows"
     ],
-    technologies: ["Node.js", "Express.js", "Java", "Spring Boot", "Microservices", "REST APIs", "JWT", "OAuth2"]
+    technologies: ["Java", "Spring Boot", "Microservices", "Node.js", "Express.js", "React.js", "REST APIs", "JWT", "OAuth2"]
   }
 ];
 

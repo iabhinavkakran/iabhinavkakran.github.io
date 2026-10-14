@@ -8,11 +8,11 @@ const projects = [
   {
     title: "USPA Refund Automation System",
     type: "Production System",
-    description: "Refund and return automation system for DMart eCommerce, integrating 3 commerce platforms with Node.js services and React.js dashboards.",
+    description: "Refund and return automation system for DMart eCommerce, integrating 3 commerce platforms with Node.js and Spring Boot services and React.js dashboards.",
     githubLink: "https://github.com/iabhinavkakran",
     liveLink: null,
     role: "Lead Developer",
-    technologies: ["Node.js", "Express.js", "React.js", "REST APIs", "Shopify", "Omuni", "Marmeto", "Razorpay", "JWT"],
+    technologies: ["Node.js", "Express.js", "Java", "Spring Boot", "React.js", "REST APIs", "Microservices", "Shopify", "Omuni", "Marmeto", "Razorpay", "JWT"],
     impact: {
       metrics: [
         { value: "3", label: "Platforms Integrated", icon: FaRocket, trend: "success" },
@@ -24,7 +24,7 @@ const projects = [
     highlights: [
       {
         title: "Multi-Platform Integration",
-        description: "Integrated Shopify, Omuni, and Marmeto with Node.js backend services and React.js dashboards.",
+        description: "Integrated Shopify, Omuni, and Marmeto with Node.js and Spring Boot backend services and React.js dashboards.",
         technical: "RESTful APIs with idempotent request handling and consistent data modelling"
       },
       {
@@ -39,8 +39,8 @@ const projects = [
       },
       {
         title: "RESTful Service Design",
-        description: "Built scalable Node.js and Express.js RESTful APIs and backend services for the Digital API team.",
-        technical: "Layered Express routes, validation middleware, structured error handling"
+        description: "Built scalable Node.js, Express.js, and Spring Boot RESTful APIs and backend services for the Digital API team.",
+        technical: "Layered routes and controllers, validation middleware, structured error handling"
       }
     ]
   },
